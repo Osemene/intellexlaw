@@ -544,12 +544,14 @@ textarea {
 
 .about-split {
   display: grid;
-  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.05fr);
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
   gap: 26px;
   align-items: center;
 }
 
 .about-image-card {
+  width: min(100%, 420px);
+  justify-self: center;
   overflow: hidden;
   border-radius: 28px;
   background: var(--surface);
@@ -558,8 +560,9 @@ textarea {
 
 .about-image-card img {
   width: 100%;
-  aspect-ratio: 0.88;
+  aspect-ratio: 0.8;
   object-fit: cover;
+  object-position: center top;
 }
 
 .about-image-copy {
